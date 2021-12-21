@@ -1,27 +1,31 @@
 #include<iostream>
 using namespace std;
 
+void InsertionSort(int a[],int n){
+    for(int i=1;i<n;i++){              
+        int current = a[i];
+        int j = i-1;
+        while(a[j]>current && j>=0){
+            a[j+1] = a[j];
+            a[j] = current;
+            j = j - 1;
+        }
+    }
+} 
+
 int main(){
     int n;
     cin>>n;
-    int arr[n];
+    int a[n];
     for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-    for(int i=1;i<n;i++){           // hum first(0th) element se start nhi karenge
-        int current = arr[i];         // current first number nhi hoga
-        int j = i-1;
-        while(arr[j]>current && j>=0){ // current wale se usko pahle wale se compare karenge
-            arr[j+1] = arr[j];       // if yes we will move it by one position
-            j--;
-        }
-        arr[j+1]=current;
-    }
-    for(int i=0;i<n;i++){
-        cout<<arr[i];
+        cin>>a[i];
     }
     
-    
+    InsertionSort(a,n);
+
+    for(int i=0;i<n;i++){
+        cout<<a[i];
+    }
 }
 
 
