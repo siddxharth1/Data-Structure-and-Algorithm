@@ -1,7 +1,7 @@
 #include <stdio.h>
 int FactorialInterative(int n){
     int fact = 1;
-    for(int i=0;i<n;i++){
+    for(int i=1;i<=n;i++){
         fact = fact*i;
         
     }
@@ -10,8 +10,8 @@ int FactorialInterative(int n){
 
 int main()
 {
-    printf("Factorial (non-recursive) interative function");
-    printf("Vaasu 21MIM10035 Bisht");
+    printf("Factorial (non-recursive) interative function \n");
+    printf("Vaasu 21MIM10035 Bisht \n");
     int number, factorial;
     printf("ENTER NUMBER: ");
     scanf("%d",&number);
