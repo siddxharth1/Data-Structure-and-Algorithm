@@ -10,7 +10,7 @@ int NonBinRec(int n)
 	return count;
 }
 int main(){
-   printf("Program to determine the number of bits to represent a given decimal number in binary form using NonBinRec \n");
+   printf("Program to determine the number of bits to represent a given decimal number in binary form using non recursion \n");
    printf("Vaasu 21MIM10035 Bisht \n");   
    
    int Number, bits;
