@@ -12,14 +12,14 @@ struct node* takeInput(int n){
     for(int i=0;i<n;i++){
         scanf("%d",&data);
         struct node* newNode = malloc(sizeof(struct node));
+        newNode->next = NULL;
+        newNode->data = data;
         if(head == NULL){
-            newNode->data=data;
             head = newNode;
             tail = newNode;
         }
         else{
             tail->next = newNode;
-            newNode->data = data;
             tail = newNode;
         }
     }
@@ -32,8 +32,6 @@ void print(struct node *head){
     }
     
 }
-    
-
 int main(){
     int n= 5;
     struct node *head =  takeInput(n);
