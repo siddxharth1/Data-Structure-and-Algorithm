@@ -1,10 +1,11 @@
+### DEFINE NODE
 ```c
 struct node{
     int data;
     struct node *next;
 };
 ```
-
+### PRINT LINKED LIST
 ```c
 void print(struct node *head){
     while(head!=NULL){
@@ -12,6 +13,8 @@ void print(struct node *head){
         head = head->next;
     }   
 }
+```
+### TAKE INPUT
 ```c
 struct node* takeInput(int n){
     int data;
