@@ -2,13 +2,15 @@
 #include<stdlib.h>
 
 void SelectionSort(int a[],int n){
-    
-    for(int i=0;i<n;i++){
-        for(int j=i;j<n;j++){
-            if(a[i]>a[j]){
-                int temp = a[i];
-                a[i] = a[j];
-                a[j] = temp;
+    int min;
+    for(int i=0;i<=n-2;i++){
+        min=i;
+        for(int j=i+1;j<=n-1;j++){
+            if(a[j]<a[min]){
+                min = j;
+                int temp = a[min];
+                a[min] = a[i];
+                a[i] = temp;
             }
         }
     }
