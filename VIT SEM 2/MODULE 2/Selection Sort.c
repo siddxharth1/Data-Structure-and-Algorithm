@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include<stdlib.h>
-
+//non - decreasing
 void SelectionSort(int a[],int n){
     int min;
     for(int i=0;i<=n-2;i++){
@@ -28,3 +28,21 @@ int main(){
         printf("%d ",a[i]);
     }
 }
+
+
+/*decreasing
+void SelectionSort(int a[],int n){
+    int max;
+    for(int i=0;i<=n-2;i++){
+        max=i;
+        for(int j=i+1;j<=n-1;j++){
+            if(a[j]>a[max]){
+                max = j;
+                int temp = a[max];
+                a[max] = a[i];
+                a[i] = temp;
+            }
+        }
+    }
+}
+*/
