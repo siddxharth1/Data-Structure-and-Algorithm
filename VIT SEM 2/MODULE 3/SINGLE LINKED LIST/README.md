@@ -13,6 +13,19 @@ void print(struct node *head){
         head = head->next;
     }   
 }
+```c
+// Assigning values inside node
+struct node* getNode(int data){
+    struct node* newNode = malloc(sizeof(struct node)); // allocating dynamic memory
+    newNode->data = data;  // Assigning data value to data of current node
+    newNode->next = NULL; // Assigning NULL to next of current node
+    return newNode;
+}
+```
+
+
+
+
 ```
 ### TAKE INPUT
 ```c
