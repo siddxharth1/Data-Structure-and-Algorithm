@@ -13,6 +13,7 @@ void print(struct node *head){
         head = head->next;
     }   
 }
+```
 ```c
 // Assigning values inside node
 struct node* getNode(int data){
