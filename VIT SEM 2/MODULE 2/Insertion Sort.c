@@ -2,14 +2,14 @@
 #include<stdlib.h>
 
 void InsertionSort(int a[],int n){
-    for(int i=1;i<n;i++){              
-        int current = a[i];
-        int j = i-1;
-        while(a[j]>current && j>=0){
-            a[j+1] = a[j];
-            a[j] = current;
-            j = j - 1;
+    for(int j=1;j<=n-1;j++){              
+        int current = a[j];
+        int i = j-1;
+        while(a[i]<current && i>=0){
+            a[i+1] = a[i];
+            i = i - 1;
         }
+        a[i+1] = current;
     }
 } 
 
