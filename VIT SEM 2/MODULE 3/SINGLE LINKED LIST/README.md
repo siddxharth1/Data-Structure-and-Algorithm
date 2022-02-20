@@ -24,10 +24,6 @@ struct node* getNode(int data){
 }
 ```
 
-
-
-
-```
 ### TAKE INPUT
 ```c
 struct node* takeInput(int n){
